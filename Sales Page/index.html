@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      
+      <script src="https://secure.payza.com/JS/PayzaCheckout.js"></script>
+      
+  </head>
+    
+    <style type="text/css">
+        
+        body{
+            position: relative;
+            color: white;
+            padding-top: 130px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        #top-bar{
+            height: 130px;
+            background-color: #160840;
+            text-align: center;
+            padding-left: 150px;
+            background: linear-gradient(rgba(30, 15, 90, 0.90), rgba(30, 15, 90, 0.90)),url(images/navbg.jpg);
+        }
+        #logo{
+            width: 200px;
+        }
+        .custom-btn{
+            margin-left: 50px;
+            font-weight: 700;
+        }
+        .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+            color: #fff;
+            background-color: #40ce6c;
+            border-color: #285e8e; /*set the color you want here*/
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .left-spacer{
+            margin-left: 650px;
+            padding-top: 20px;
+        }
+        #top-wrapper{
+            border: 3px yellow solid;
+        }
+        #main-block{
+            
+            background-color: #1A2B4B;
+            width: 100%;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 40px; 
+            background: linear-gradient(rgba(28, 45, 76, 0.85), rgba(28, 45, 76, 0.85)),url(images/mainbg.jpg);
+        }
+        #main-block h1{
+            font-size: 80px;
+        }
+        h1{
+            font-size:70px;
+        }
+        #bio-box{
+            margin-top: 50px;
+            width: 900px;
+            background-color: #222A5F;
+            background: linear-gradient(rgba(27, 35, 90, 0.85), rgba(27, 35, 90, 0.85)),url(images/mainbg.jpg);
+        }
+        #profile-image{
+            width: 250px;
+            border:#0050FF solid 3px;
+            border-radius: 50%;
+            padding: 15px;
+            margin-bottom: 5px;
+        }
+        .profile-badge{
+            padding-top: 40px;
+            text-align: center;
+            padding-left: 50px;
+            padding-bottom: 20px;
+            
+        }
+        #bio-intro{
+            
+            text-align: left;
+            padding: 50px;
+        }
+        .red{
+            color: red;
+        }
+        #content{
+            padding-top: 50px;
+        }
+        .blue-border{
+            height: 22px;
+            background-color: #0050FF;
+        }
+        .dark-blue-border{
+            height: 22px;
+            background-color: #11033D;
+        }
+        #content-box{
+            padding-top: 20px;
+            background: white;
+            color: black;
+            text-align: center !important;
+            padding-bottom: 50px;
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),url(images/main-logo.png);
+        }
+        #content-box h1{
+           
+           
+        }
+        .icon{
+            width: 70px;
+            border: 3px black solid;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            
+        }
+        .top-padding{
+            padding-top: 30px;
+        }
+        .align{
+            text-align: center;
+        }
+        #list-align{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 40%;
+            padding-left: 250px;
+        }
+        .dark-blue{
+            color:#24089D;
+        }
+        .bold{
+            font-weight: lighter;
+            font-weight: bolder;
+        }
+        #testimonials{
+            background-color: #182a47;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            background: linear-gradient(rgba(22, 40, 69, 0.90), rgba(22, 40, 69, 0.90)),url(images/mainbg.jpg);
+        }
+        #testimonials h1{
+            font-size: 60px;
+        }
+        #testimonials h2{
+            margin-bottom: 20px;
+        }
+        .tint-blue{
+            color:#0050FF;
+        }
+        .test{
+            padding-bottom: 70px;
+        }
+        .image-setter{
+            width: 560px;
+        }
+        #order-now{
+            background-color: white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),url(images/paybg.jpg);
+        }
+        #order-now h1{
+            font-size: 40px;
+        }
+        #p-logo{
+            width: 350px;
+        }
+        #label{
+            background-color: #11033d;
+            width: 700px;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        #label-2{
+            background-color: #0050FF;
+            width: 500px;
+            border-radius: 5px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        .blue-tint{
+            font-size: 35px;
+            color: #0050FF;
+        }
+        #left-setter{
+            padding-left: 250px;
+            padding-top: 50px;
+        }
+        .left-setter{
+           
+           padding-left: 270px;
+            padding-top: 50px;
+            
+        }
+        #terms-content{
+            margin-top: 70px;
+        }
+        #terms-content h2{
+            color:#11033D;
+        }
+        .darken-blue{
+            color:#11033D;
+            font-size: 22px;
+            padding-left: 350px;
+            padding-top: 50px;
+        }
+        .redish{
+            background-color: #e81e1e;
+            height: 22px;
+        }
+        #footer{
+            background-color: #160840;
+            background: linear-gradient(rgba(22, 8, 64, 0.95), rgba(22, 8, 64, 0.95)),url(images/footerbg.jpg);
+        }
+        .social-icon{
+            width: 40px;
+            margin-top: 20px;
+            margin-top: 20px;
+        }
+        .float-left{
+            float: left;
+        }
+        .downer{
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+        .upper{
+            position: relative;
+            bottom: 20px;
+        }
+        .clear{
+            clear: both;
+        }
+        .paycard{
+            width: 100px;
+            border: 2px black solid;
+            border-radius: 6px;
+        }
+        .disclaimer{
+            
+        }
+        .disclaimer h2{
+            color: black;
+            text-decoration: underline;
+        }
+        #disclaimer{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            color: grey;
+        }
+        .paypal-btn{
+            width: 150px;
+        }
+        .btn-sep{
+            height: 70px;
+            width: 200px;
+            background-color: white;
+            border: 2px black dashed;
+            border-radius: 5px;
+            margin-left: -25px;
+            float: left;
+            margin-right: 50px;
+            padding-top: 5px;
+            
+        }
+        .btn-sep:hover{
+            transform: scale(1.1);
+            transition: 1s;
+        }.extra-border{
+            border: 1px solid white;
+            margin-right: 10px;
+        }
+        .hand-write{
+            font-family: 'Pacifico', cursive;
+        }
+
+    </style>
+    
+
+  <body>
+    
+   
+   <!-- navbar starts from here-->
+        <nav id="top-bar" class="navbar navbar-inverse fixed-top navbar-toggleable-md navbar-light bg-faded">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <img id="logo" src="images/main-logo.png" alt="logo">
+          <div class="left-spacer collapse navbar-collapse" id="navbarSupportedContent">
+            <a  href="index.html#testimonials"><button type="button" class="custom-btn btn btn-primary">TESTIMONIALS</button></a>
+            <a href="index.html#order-now"><button type="button" class="custom-btn btn btn-primary">BUY TRAFFIC</button></a>
+          </div>
+        </nav><!-- nav bar ends -->
+ 
+<!--seprator div--><div class="container-fluid blue-border"></div>
+         
+    <!-- intro block starts from here-->
+          <div class="container-fluid" id="main-block">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1>"READY TO BUY TRAFFIC"</h1>
+                  <h2>THAT WILL GUARANTEE YOU HOT LEADS AND SALES!</h2>  
+                </div>
+              </div>
+          <div id="bio-box" class="container">
+              <div class="row">
+                <div class="col-sm-4 profile-badge">
+                  <img id="profile-image" src="images/victor.jpg" alt="profile-image">
+                  <h2 class="hand-write">Victor Tanko</h2>
+                </div>
+                    <div id="bio-intro" class="col-sm-8">
+                    <h2>Hello,<br><br></h2>
+                        <h3>My Name is Victor Tanko,<br><br></h3>
+                        <h3>I am an Online Marketing Practitioner - victanko.com<br></h3>
+                        <h3>and a Technology Sales Manager with a Startup IT firm - cloudaccess.org.ng </h3>
+                    </div>     
+                </div>
+          </div><!-- profile div end here-->
+          <div id="content" class="container">    
+              <h2>It is very possible you may have been looking for the best way
+                to solving your traffic solutions which has lingered for a while.
+                My Friend, look no further because,<br><br> I've Got Your back!
+                Very few vendors understand what it takes to provide excellent traffic that is satisfying, and <span class="red">I'm Happy to inform You that I am One of the very few...</span>
+              </h2>   
+          </div>
+    </div><!-- main-block div end here-->
+      
+    
+<!-- seprator--><div class="container-fluid blue-border"></div>
+      
+      
+      <div id="content-box" class="container-fluid">
+          <!-- hear me out starts here-->
+          <div class="row">
+            <div class="col-sm-12 top-padding align">
+                
+              <h1><img class="icon" src="images/earicon.ico" alt="earicon"><span class="bold">HEAR</span> ME OUT</h1>
+            </div>
+          
+          </div>
+          
+          
+          <div class="row">
+            <div class="col-sm-12 top-padding align">
+                
+                <h2><span class="dark-blue">The Only reason why I am part of the few is simply because I have been in your position.</span></h2>
+            </div>
+          
+          </div>
+          
+          <div class="row"?>
+              <div id="list-align" class="col-sm-12 top-padding">
+                  <ul>
+                    <li>I know how frustrating it can be.</li>
+                    <li>I understand how discouraging it can be when you keep spending huge sums on.</li>
+                    <li>PROMISES  that turns out to be VERY disappointing!</li>
+                  </ul>
+              </div>
+          </div>
+          <!-- hear me out ends here-->
+          
+          
+          <div class="row">
+            <div class="col-sm-12 top-padding align">
+                
+              <h1><img class="icon" src="images/Handshake_hands_deal_contractors.png" alt="handshake">THE <span class="bold">DEAL</span></h1>
+            </div>
+          
+          </div>
+          
+          
+          <div class="row">
+            <div class="col-sm-12 top-padding align">
+                
+                <h2><span class="dark-blue">My traffic is <span class="red">GUARANTEED</span> to give you very good <span class="red">OPTINs</span> and <span class="red">SALES</span> because of a  <span class="red">NEW</span> Scientific List Building strategy.<br><br></span></h2>
+                <h2>"Play Your Part, Present a High Converting Offer and I will GUARANTEE You FRESHLY SOURCED visitors"<br><br></h2>
+                <h2>Don't Take My Word For It... <span class="red">Look At What Others Are Saying About My Traffic!</span></h2>
+            </div>
+          
+          </div>
+     
+      
+      </div><!-- content box div end here-->
+      
+      
+<!-- seprator--><div class="container-fluid blue-border"></div>
+      
+      
+      <!-- Testimonials block starts from here-->
+      
+      <div id="testimonials" class="container-fluid">
+          
+          <div class="row">
+              <div class="col-sm-12 align">
+                  
+                  <h1>See What My Clients Say About My Traffic<br><br></h1>
+          
+              </div>
+          
+          </div>
+       
+          <div  class="row test">
+              <div class="col-sm-12 align">
+                 
+                  <h2>"JAMES POWELL - <span class="tint-blue">Traffic from Victor Tank</span>"</h2>
+                  
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/2OcARaBJ0u0" frameborder="0" allowfullscreen></iframe>
+           
+              </div>
+          
+          </div>
+          
+          <div  class="row test">
+              <div class="col-sm-12 align">
+                 
+                  <h2>"JAMES POWELL - <span class="tint-blue">Pretty responsive, Transaction was smooth,Very professional</span>"</h2>
+                  
+                 <img class="image-setter" src="images/sc3.jpg" alt="screenshot">
+           
+              </div>
+          
+          </div>
+          
+          <div  class="row test">
+              <div class="col-sm-12 align">
+                 
+                  <h2>"RAKIBUL HASAN - <span class="tint-blue">Extremely impressive run with Victor Tank, Great speed,with High Optin</span>"</h2>
+                  
+                 <img class="image-setter" src="images/sc1.jpg" alt="screenshot">
+           
+              </div>
+          
+          </div>
+          
+          <div  class="row test">
+              <div class="col-sm-12 align">
+                  
+                  
+                  <h2>"CHRIS NUNEZ - <span class="tint-blue">Very responsive, Good, Quick</span>"</h2>
+                  
+                  <img class="image-setter" src="images/sc2.jpg" alt="screenshot">
+           
+              </div>
+          
+          </div>
+  
+      </div>
+      <!--testimonials ends here-->
+      
+<!-- seprator--><div class="container-fluid dark-blue-border"></div>
+      
+      <!-- Order now starts from here-->
+      <div id="order-now" class="conatiner-fluid">
+          
+            <div class="row">
+              <div class="col-sm-12 align">
+                  <img id="p-logo" src="images/main-logo.png" alt="pakage-logo">
+               
+              </div>
+       
+            </div>
+          
+           <div class="row">
+              <div class="col-sm-12 align">
+                  <div id="label" class="container"><h1>GUARANTEED! You Will Get 100% real Human Traffic</h1></div>
+               
+              </div>
+       
+            </div>
+          
+          <div class="row">
+              <div class="col-sm-12 align">
+                  <div id="label-2" class="container"><h1>Book Your Order Now!</h1></div>
+               
+              </div>
+       
+            </div>
+          
+          <div id="payment-block" class="container-fluid">
+              <div class="row left-setter">
+                  <div class="col-sm-6">
+                      <h3> <span class="blue-tint">2000 Premium clicks-$1600</span></h3>
+                      <div class=" container btn-sep">
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QME7QTGQXVJCN" target="_blank"><img class="paypal-btn" src="images/checkout%20with%20paypal.jpg" alt="paypalbutton"></a>
+                      </div>
+                      <div class=" container btn-sep">
+                         <a name='linkPay' href='https://secure.payza.com/checkout?AzA8ZGZgb21oXm9gJTA8eHNoc21gdHBeb2AlPDxAL3FiUUIyRkEzS3NNZm9KWS5TKkVRPGNoc2J0Y25xb15vYAQ='><img class="payza-btn" src="images/payzabutton.gif" alt="payzabutton"></a>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <h3> <span class="blue-tint">2000 Premium clicks-$800</span></h3>
+                      <div class=" container btn-sep">
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B8XF55LJBJK3N" target="_blank"><img class="paypal-btn" src="images/checkout%20with%20paypal.jpg" alt="paypalbutton"></a>
+                      </div>
+                      <div class=" container btn-sep">
+                        <a name='linkPay' href='https://secure.payza.com/checkout?AS05YWNdbGplW2xdIi05dXBlcGpdcW1bbF0iOTlzRW1PZ1NQU2pAQ2BAXWVhTkktalNhOWBlcF9xYGtubFtsXQU='><img class="trans" src="images/payzabutton.gif" alt="payzabutton"></a>
+                      </div>
+                  </div>
+                 
+              </div>
+              <div class="row left-setter">
+                  <div class="col-sm-6">
+                      <h3> <span class="blue-tint">2000 Premium clicks-$400</span></h3>
+                      <div class=" container btn-sep">
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UBTF6TFVJSF84" target="_blank"><img class="paypal-btn" src="images/checkout%20with%20paypal.jpg" alt="paypalbutton"></a>
+                      </div>
+                      <div class=" container btn-sep">
+                        <a name='linkPay' href='https://secure.payza.com/checkout?CThEbG5od3VwZndoLThE4oKse3B7dWh8eGZ3aC1ERG44UeKCrDo9a3ZTWVVVUmlJTHJNbVhAW0RrcHtqfGt2eXdmd2gC'><img class="trans" src="images/payzabutton.gif" alt="payzabutton"></a>
+                      </div>
+                      
+                  </div>  
+                      
+                    <div class="col-sm-6">
+                        <h3> <span class="blue-tint">2000 Premium clicks-$240</span></h3>
+                        <div class=" container btn-sep">
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BA6SSGXRQ4AUG" target="_blank"><img class="paypal-btn" src="images/checkout%20with%20paypal.jpg" alt="paypalbutton"></a>
+                        </div>
+                        <div class=" container btn-sep">
+                            <a name='linkPay' href='https://secure.payza.com/checkout?BDA8ZGZgb21oXm9gJTA8eHNoc21gdHBeb2AlPDxANjJCeWtFRFNCSEVRWDhXQHFTZWFiPGNoc2J0Y25xb15vYAU='><img class="trans" src="images/payzabutton.gif" alt="payzabutton"></a>
+                        </div>
+                  
+                  </div>
+                 
+              </div>
+              <div class="row left-setter">
+                  <div class="col-sm-6">
+                      <h3> <span class="blue-tint">2000 Premium clicks-$160</span></h3>
+                      <div class=" container btn-sep">
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JATHPQD7CXHD6" target="_blank"><img class="paypal-btn" src="images/checkout%20with%20paypal.jpg" alt="paypalbutton"></a>
+                      </div>
+                      <div class=" container btn-sep">
+                        <a name='linkPay' href='https://secure.payza.com/checkout?AS46YmRebWtmXG1eIy46dnFmcWtecm5cbV4jOjpkTFdNL1FPTl53X1VVVkNnbXFDQW1DOmFmcWByYWxvbVxtXgQ='><img class="trans" src="images/payzabutton.gif" alt="payzabutton"></a>
+                       </div>
+                  </div>
+                  <div class="col-sm-6">
+                       <h3> <span class="blue-tint">2000 Premium clicks-$80</span></h3>
+                       <div class=" container btn-sep">
+                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QXXJZL2VJAHJC" target="_blank"><img class="paypal-btn" src="images/checkout%20with%20paypal.jpg" alt="paypalbutton"></a>
+                       </div>
+                       <div class=" container btn-sep">
+                            <a name='linkPay' href='https://secure.payza.com/checkout?BDE9ZWdhcG5pX3BhJjE9eXRpdG5hdXFfcGEmPT13U2JFaW95Y3RaY0ZlK0xmd2o1b0xvPWRpdGN1ZG9ycF9wYQQ='><img class="trans" src="images/payzabutton.gif" alt="payzabutton"></a>
+                       </div>
+                  </div>
+                 
+              </div>
+         
+          </div>
+    
+      <!--payment div end here-->
+          
+          <div id="terms-content" class="row">
+              <div class="col-sm-12 align">
+              
+              <h2>TERMS OF SERVICE</h2>
+              
+              </div>
+          
+          </div>
+          
+          <div class="row darken-blue">
+              <div class="col-sm-12">
+                  
+                  <ol>  
+                      <li>Online Business Opportunities, Make Money Online, MLM <span class="red">Converts Very Well</span> with my traffic</li>
+                      <li>100-500 Clicks will get delivered between 24hrs to 72hrs </li>
+                      <li>Very responsive Support Service </li>
+                      <li>Select a Package that suits your interest</li>
+                      <li>Click on the BuyNow button, then follow the on-screen instructions to complete your purchase</li>
+                      <li>Message me on Facebook Messenger immediately</li>
+              
+                  </ol>
+            
+              </div>
+         
+          </div>
+      
+      </div>
+      <!-- Order div ends here--> 
+      
+<!-- seprator div--> <div class="container-fluid redish"></div>
+      
+      <!-- footer starts from here-->
+      <div id="footer" class="container-fluid">
+        
+          <div  class="container">
+                <div class="row">
+                    <div  class="col-sm-4 profile-badge">
+                        <img id="profile-image" src="images/victor.jpg" alt="profile-image">
+                            <h2 class="hand-write">Victor Tanko</h2>
+                    </div>
+                    <div id="bio-intro" class="col-sm-8">
+                        <h4>I look forward to connecting with you and providing you with all the clicks you will ever need for your business.<br><br></h4>
+                        <h4>Please get in touch if you need anything before making a decision. I'm here to help you succeed.<br></h4>
+                        <a href="facebook.com/victorkazachiang.tanko"><img class="social-icon" src="images/facebook-messenger.svg" alt="fbmessnger"></a>
+                        <a href="https://twitter.com/TankoVictor"><img class="social-icon" src="images/twitter-logo.png" alt="twitter"></a>
+                        <a href="https://www.instagram.com/victorktanko/"><img class="social-icon" src="images/Instagram-logo.png" alt="instagram"></a><br>
+                        
+                        <img class="float-left social-icon" src="images/Gmail-Logo.png" alt="gmail"><h5 class="float-left downer">victor@victanko.com</h5>
+                        
+                        <img class="float-left social-icon" src="images/Microsoft_Skype_for_Business_logo.png" alt="skype"><h5 class="float-left downer">vicktor.tanko</h5>
+                        
+                        <img class="float-left social-icon upper" src="images/mobile-phone-by-svm--cellphone-22.png" alt="phone"><h5 class="float-left downer">+234 8122 9999 66</h5><br>
+                       
+                        <img class="float-left social-icon clear upper" src="images/address-logo.png" alt="address"><h6 class="float-left downer">Flat C, Block 5, J Close, 1st Avenue, Gwarimpa, Abuja, Nigeria</h6><br>
+                    
+                        <h6 class="clear">Accepted Payments:</h6>
+                        <img class="paycard extra-border" src="images/Payza%204BTC.jpg" alt="payza">
+                        <img class="paycard" src="images/checkout%20with%20paypal.jpg" alt="paypal">
+                    
+                    </div>
+                   
+                </div>
+            </div>
+
+      </div>
+      <!-- footer divs end here-->
+      
+      <div id="disclaimer" class="container">
+       <div class="row">
+        <div class="col-sm-12 disclaimer align">
+          <a href="#"><h2>Privacy Policy Statement</h2></a><br><br>
+            <h4>Refund Policy / Disclaimer</h4>
+            <h6>*I CANNOT determine the results you will receive with your solo ad.  It is up to you to have a good converting offer and sales funnel.  And it is up to you to know how well your squeeze page converts.  The Only Thing I can guarantee is all clicks will be delivered to your website URLIf you are unsure if this service is for you, contact me before you buy to discuss as there are No Refunds available.*</h6><br>
+            <h6>© KazaChiang.com/soloads 2017.</h6>
+        </div>   
+       
+       </div>
+    
+      </div>
+      <!-- disclaimer ends here-->
+ 
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/n'OQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
